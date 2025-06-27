@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشريك السعودي للاستثمار - ملف تعريفي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+        
+        :root {
+            --primary-color: #01401C;
+            --secondary-color: #C09F42;
+            --dark-color: #0D1F2D;
+            --light-color: #f8f9fa;
+            --accent-color: #E8F3F1;
+            --gradient-primary: linear-gradient(135deg, #01401C 0%, #025928 100%);
+            --gradient-gold: linear-gradient(135deg, #C09F42 0%, #E5C158 100%);
+            --gradient-dark: linear-gradient(135deg, #0D1F2D 0%, #1A3A52 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .presentation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        /* Cover Slide */
+        .cover-slide {
+            height: 100vh;
+            background: var(--gradient-dark);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+        }
+        
+        .cover-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.1;
+        }
+        
+        .logo-container {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .cover-title {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .cover-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--secondary-color);
+        }
+        
+        .cover-subtitle {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+        
+        .cover-tagline {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+        
+        .cover-decoration {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,224L60,213.3C120,203,240,181,360,181.3C480,181,600,203,720,213.3C840,224,960,224,1080,202.7C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* About Slide */
+        .slide {
+            min-height: 100vh;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .slide-header {
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .slide-title {
+            font-size: 42px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .slide-subtitle {
+            font-size: 22px;
+            color: #666;
+            max-width: 800px;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .about-image::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--secondary-color);
+            border-radius: 10px;
+            top: 20px;
+            right: -20px;
+            z-index: -1;
+        }
+        
+        .about-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-right: 4px solid var(--primary-color);
+        }
+        
+        .about-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .about-box p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        /* Vision 2030 Slide */
+        .vision-slide {
+            background-color: var(--accent-color);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .vision-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2301401C' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .vision-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .vision-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .vision-logo {
+            max-width: 200px;
+            margin: 0 auto 30px;
+        }
+        
+        .vision-title {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .vision-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .sector-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .sector-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .sector-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+        
+        .sector-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .sector-icon i {
+            font-size: 36px;
+            color: var(--primary-color);
+        }
+        
+        .sector-title {
+            font-size: 20px;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .sector-description {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Goals Slide */
+        .goals-slide {
+            background-color: var(--dark-color);
+            color: #fff;
+        }
+        
+        .goals-slide .slide-title {
+            color: #fff;
+        }
+        
+        .goals-slide .slide-subtitle {
+            color: #ccc;
+        }
+        
+        .goals-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .goal-card {
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 40px 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .goal-card:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255,255,255,0.1);
+            border-bottom: 3px solid var(--secondary-color);
+        }
+        
+        .goal-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        
+        .goal-icon i {
+            font-size: 30px;
+            color: #fff;
+        }
+        
+        .goal-title {
+            font-size: 24px;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .goal-description {
+            color: #ccc;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .goal-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .goal-list li {
+            margin-bottom: 10px;
+            padding-right: 25px;
+            position: relative;
+            color: #aaa;
+        }
+        
+        .goal-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--secondary-color);
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+        
+        /* Services Slide */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--accent-color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            flex-shrink: 0;
+        }
+        
+        .service-icon i {
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+        
+        .service-title h3 {
+            font-size: 22px;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+        
+        .service-title span {
+            font-size: 16px;
+            color: #888;
+        }
+        
+        .service-body {
+            flex: 1;
+        }
+        
+        .service-body p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .service-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: auto;
+        }
+        
+        .service-benefit {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        /* Benefits Slide */
+        .benefits-slide {
+            background: var(--gradient-primary);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefits-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .benefits-slide .slide-title {
+            color: #fff;
+        }
+        
+        .benefits-slide .slide-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .benefits-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .benefits-table th, .benefits-table td {
+            padding: 20px;
+            text-align: right;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .benefits-table th {
+            background-color: rgba(0,0,0,0.2);
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .benefits-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .benefits-table td:first-child {
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .benefits-table td:last-child {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .benefits-table tr:hover td {
+            background-color: rgba(255,255,255,0.05);
+        }
+        
+        /* Models Slide */
+        .models-slide {
+            background-color: #fff;
+        }
+        
+        .models-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .model-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .model-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+        
+        .model-header {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .model-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .model-icon i {
+            font-size: 24px;
+            color: #fff;
+        }
+        
+        .model-title {
+            font-size: 22px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .model-body {
+            flex: 1;
+        }
+        
+        .model-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .model-list li {
+            margin-bottom: 15px;
+            padding-right: 30px;
+            position: relative;
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .model-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+        
+        /* Contact Slide */
+        .contact-slide {
+            background: var(--gradient-dark);
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M81.28 88H68.413l19.298 19.298L81.28 88zm2.107 0h13.226L90 107.838 83.387 88zm15.334 0h12.866l-19.298 19.298L98.72 88zm-32.927-2.207L73.586 78h32.827l.5.5 7.294 7.293L115.414 87l-24.707 24.707-.707.707L64.586 87l1.207-1.207zm2.62.207L74 80.414 79.586 86H68.414L74 80.414zm16 0L98 80.414 103.586 86H92.414L98 80.414zm0-16L98 64.414 103.586 70H92.414L98 64.414zm-16 0L74 64.414 79.586 70H68.414L74 64.414zm-16 0L58 64.414 63.586 70H52.414L58 64.414zM10.414 16L16 10.414 21.586 16H10.414zm-16 0L0 10.414 5.586 16H-5.586zM26.414 16L32 10.414 37.586 16H26.414zm-16 0L16 10.414 21.586 16H10.414zm48 0L64 10.414 69.586 16H58.414zm-16 0L48 10.414 53.586 16H42.414zm-16 0L32 10.414 37.586 16H26.414zm-16 0L16 10.414 21.586 16H10.414zm32 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zm-64 0L32 10.414 37.586 16H26.414zm16 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zm-64 0L32 10.414 37.586 16H26.414zm16 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zm-64 0L32 10.414 37.586 16H26.414zm16 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zm-64 0L32 10.414 37.586 16H26.414zm16 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zm-64 0L32 10.414 37.586 16H26.414zm16 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zm-64 0L32 10.414 37.586 16H26.414zm16 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zm-64 0L32 10.414 37.586 16H26.414zm16 0L48 10.414 53.586 16H42.414zm16 0L64 10.414 69.586 16H58.414zm16 0L80 10.414 85.586 16H74.414zm16 0L96 10.414 101.586 16H90.414zM16 26.414L10.414 32H21.586L16 26.414zM48 26.414L42.414 32H53.586L48 26.414zM80 26.414L74.414 32H85.586L80 26.414zM112 26.414L106.414 32H117.586L112 26.414zM144 26.414L138.414 32H149.586L144 26.414zM16 42.414L10.414 48H21.586L16 42.414zM48 42.414L42.414 48H53.586L48 42.414zM80 42.414L74.414 48H85.586L80 42.414zM112 42.414L106.414 48H117.586L112 42.414zM144 42.414L138.414 48H149.586L144 42.414zM16 58.414L10.414 64H21.586L16 58.414zM48 58.414L42.414 64H53.586L48 58.414zM80 58.414L74.414 64H85.586L80 58.414zM112 58.414L106.414 64H117.586L112 58.414zM144 58.414L138.414 64H149.586L144 58.414zM16 74.414L10.414 80H21.586L16 74.414zM48 74.414L42.414 80H53.586L48 74.414zM80 74.414L74.414 80H85.586L80 74.414zM112 74.414L106.414 80H117.586L112 74.414zM144 74.414L138.414 80H149.586L144 74.414zM16 90.414L10.414 96H21.586L16 90.414zM48 90.414L42.414 96H53.586L48 90.414zM80 90.414L74.414 96H85.586L80 90.414zM112 90.414L106.414 96H117.586L112 90.414zM144 90.414L138.414 96H149.586L144 90.414zM16 106.414l-5.586 5.586H21.586L16 106.414zM48 106.414l-5.586 5.586H53.586L48 106.414zM80 106.414l-5.586 5.586H85.586L80 106.414zM112 106.414l-5.586 5.586h11.172L112 106.414zM144 106.414l-5.586 5.586h11.172L144 106.414zM16 122.414l-5.586 5.586H21.586L16 122.414zM48 122.414l-5.586 5.586H53.586L48 122.414zM80 122.414l-5.586 5.586H85.586L80 122.414zM112 122.414l-5.586 5.586h11.172L112 122.414zM144 122.414l-5.586 5.586h11.172L144 122.414zM16 138.414l-5.586 5.586H21.586L16 138.414zM48 138.414l-5.586 5.586H53.586L48 138.414zM80 138.414l-5.586 5.586H85.586L80 138.414zM112 138.414l-5.586 5.586h11.172L112 138.414zM144 138.414l-5.586 5.586h11.172L144 138.414zM16 154.414l-5.586 5.586H21.586L16 154.414zM48 154.414l-5.586 5.586H53.586L48 154.414zM80 154.414l-5.586 5.586H85.586L80 154.414zM112 154.414l-5.586 5.586h11.172L112 154.414zM144 154.414l-5.586 5.586h11.172L144 154.414zM16 170.414l-5.586 5.586H21.586L16 170.414zM48 170.414l-5.586 5.586H53.586L48 170.414zM80 170.414l-5.586 5.586H85.586L80 170.414zM112 170.414l-5.586 5.586h11.172L112 170.414zM144 170.414l-5.586 5.586h11.172L144 170.414zM80 0L74.414 5.586H85.586L80 0zM112 0l-5.586 5.586H117.586L112 0zM144 0l-5.586 5.586H149.586L144 0zM176 0l-5.586 5.586H181.586L176 0zM48 0L42.414 5.586H53.586L48 0zM80 0L74.414 5.586H85.586L80 0zM112 0l-5.586 5.586H117.586L112 0zM144 0l-5.586 5.586H149.586L144 0zM176 0l-5.586 5.586H181.586L176 0z' fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .contact-slide .slide-title {
+            color: #fff;
+        }
+        
+        .contact-slide .slide-subtitle {
+            color: rgba(255,255,255,0.8);
+            margin: 0 auto 40px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 250px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon i {
+            font-size: 30px;
+            color: var(--secondary-color);
+        }
+        
+        .contact-label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .contact-value {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-gold);
+            color: #fff;
+            box-shadow: 0 10px 20px rgba(192, 159, 66, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(192, 159, 66, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+            transform: translateY(-5px);
+        }
+        
+        /* Utilities */
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .badge i {
+            margin-left: 5px;
+        }
+        
+        .section-divider {
+            height: 4px;
+            background: var(--gradient-primary);
+            margin: 40px 0;
+            border-radius: 2px;
+        }
+        
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Saudi Flag Animation */
+        .saudi-flag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            background-color: var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+        
+        .flag-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 10px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Cpath d='M65,30 L45,30 L45,15 L35,15 L35,30 L15,30 L15,40 L35,40 L35,55 L45,55 L45,40 L65,40 Z' fill='%23ffffff'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        
+        .flag-text {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .sectors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .goals-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .models-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .slide {
+                padding: 60px 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .cover-title {
+                font-size: 42px;
+            }
+            
+            .cover-subtitle {
+                font-size: 22px;
+            }
+            
+            .slide-title {
+                font-size: 36px;
+            }
+            
+            .slide {
+                padding: 40px 30px;
+            }
+            
+            .sectors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .goals-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-item {
+                width: 100%;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .slide {
+                page-break-after: always;
+                min-height: auto;
+            }
+            
+            .cover-slide {
+                height: auto;
+            }
+            
+            .cover-decoration {
+                display: none;
+            }
+            
+            .btn {
+                border: 1px solid #000;
+                padding: 10px 20px;
+            }
+            
+            .goal-card::before,
+            .about-image::before {
+                display: none;
+            }
+            
+            .contact-item {
+                border: 1px solid #ccc;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        /* Page Navigation */
+        .page-nav {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .page-nav-item {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .page-nav-item.active {
+            background-color: var(--secondary-color);
+            transform: scale(1.3);
+        }
+        
+        .page-nav-item:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        /* Slide Counter */
+        .slide-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            font-weight: 500;
+        }
+        
+        /* Vision 2030 Badge */
+        .vision-2030-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .vision-2030-badge img {
+            height: 30px;
+        }
+        
+        .vision-2030-badge span {
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Cover Slide -->
+        <section class="cover-slide" id="slide-1">
+            <div class="saudi-flag">
+                <div class="flag-icon"></div>
+                <div class="flag-text">المملكة العربية السعودية</div>
+            </div>
+            
+            <div class="vision-2030-badge">
+                <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0ZM50 90C27.9 90 10 72.1 10 50C10 27.9 27.9 10 50 10C72.1 10 90 27.9 90 50C90 72.1 72.1 90 50 90Z" fill="#C09F42"/>
+                    <path d="M50 20C33.4 20 20 33.4 20 50C20 66.6 33.4 80 50 80C66.6 80 80 66.6 80 50C80 33.4 66.6 20 50 20ZM50 70C39 70 30 61 30 50C30 39 39 30 50 30C61 30 70 39 70 50C70 61 61 70 50 70Z" fill="#C09F42"/>
+                    <path d="M50 40C44.5 40 40 44.5 40 50C40 55.5 44.5 60 50 60C55.5 60 60 55.5 60 50C60 44.5 55.5 40 50 40Z" fill="#C09F42"/>
+                </svg>
+                <span>رؤية 2030</span>
+            </div>
+            
+            <div class="logo-container">
+                <svg width="220" height="220" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#01401C" />
+                            <stop offset="100%" stop-color="#025928" />
+                        </linearGradient>
+                        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#C09F42" />
+                            <stop offset="100%" stop-color="#E5C158" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Outer Circle -->
+                    <circle cx="150" cy="150" r="145" fill="none" stroke="#C09F42" stroke-width="2" />
+                    
+                    <!-- Inner Circle -->
+                    <circle cx="150" cy="150" r="125" fill="none" stroke="#C09F42" stroke-width="1" />
+                    
+                    <!-- Center Shield -->
+                    <path d="M150,60 L200,85 L200,135 C200,170 180,200 150,220 C120,200 100,170 100,135 L100,85 L150,60Z" fill="url(#logoGradient)" stroke="#C09F42" stroke-width="2" />
+                    
+                    <!-- Palm Tree Symbol -->
+                    <path d="M150,90 L150,180 M140,100 C140,100 130,110 140,120 M160,100 C160,100 170,110 160,120 M135,120 C135,120 125,130 135,140 M165,120 C165,120 175,130 165,140 M130,140 C130,140 120,150 130,160 M170,140 C170,140 180,150 170,160" stroke="#C09F42" stroke-width="3" stroke-linecap="round" />
+                    
+                    <!-- Text -->
+                    <text x="150" y="250" text-anchor="middle" style="font-family: 'Tajawal', sans-serif; font-weight: 800; font-size: 24px; fill: url(#textGradient);">الشريك السعودي للاستثمار</text>
+                </svg>
+            </div>
+            
+            <h1 class="cover-title animate">الشريك السعودي للاستثمار</h1>
+            <p class="cover-tagline animate delay-1">حيث تتحوّل العلاقات إلى فرص، والشراكات إلى إنجازات</p>
+            <p class="cover-subtitle animate delay-2">المنصة النخبوية التي تجمع أصحاب المناصب ورواد الأعمال في المملكة، لنبني سويًا تحالفات استراتيجية تشارك في رسم مستقبل الاقتصاد السعودي</p>
+            <div class="animate delay-3">
+                <a href="#slide-2" class="btn btn-primary">تعرف علينا</a>
+                <a href="#slide-7" class="btn btn-outline">تواصل معنا</a>
+            </div>
+            <div class="cover-decoration"></div>
+            <div class="slide-counter">1/7</div>
+        </section>
+        
+        <!-- About Slide -->
+        <section class="slide" id="slide-2">
+            <div class="slide-header">
+                <div class="badge"><i class="fas fa-info-circle"></i> من نحن</div>
+                <h2 class="slide-title">الشريك السعودي للاستثمار</h2>
+                <p class="slide-subtitle">تجمّع نخبوي يضم أصحاب مناصب تنفيذية ورواد أعمال في شركات ومؤسسات سعودية ناشئة أو قائمة</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-box">
+                        <h3>بناء تحالفات استراتيجية</h3>
+                        <p>نعمل على بناء تحالفات استراتيجية بين المؤسسات الأعضاء، مما يتيح تحقيق أهداف مشتركة تعود بالنفع على جميع الأطراف وتساهم في تحقيق مستهدفات رؤية 2030.</p>
+                    </div>
+                    
+                    <div class="about-box">
+                        <h3>نمو استراتيجي غير عضوي</h3>
+                        <p>نوجه جهودنا نحو تحقيق نمو استراتيجي غير عضوي للمؤسسات من خلال الشراكات الذكية والتحالفات التنفيذية التي تفتح آفاقاً جديدة للتوسع والنجاح.</p>
+                    </div>
+                    
+                    <div class="about-box">
+                        <h3>فرص موسمية ذات عوائد واضحة</h3>
+                        <p>نركز على خلق فرص موسمية ذات عوائد واضحة تخدم الوطن والقطاع الخاص والمستثمرين، خصوصاً في قطاعات الحج والعمرة والمواسم السياحية.</p>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <svg width="100%" height="300" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#f5f5f5" />
+                                <stop offset="100%" stop-color="#e0e0e0" />
+                            </linearGradient>
+                            <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#01401C" />
+                                <stop offset="100%" stop-color="#025928" />
+                            </linearGradient>
+                            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#C09F42" />
+                                <stop offset="100%" stop-color="#E5C158" />
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Background -->
+                        <rect x="0" y="0" width="600" height="400" rx="10" fill="url(#bgGradient)" />
+                        
+                        <!-- Skyline -->
+                        <g transform="translate(50, 50)">
+                            <!-- Kingdom Tower -->
+                            <rect x="100" y="50" width="40" height="250" rx="5" fill="url(#buildingGradient)" />
+                            <rect x="110" y="20" width="20" height="30" fill="url(#buildingGradient)" />
+                            <rect x="115" y="0" width="10" height="20" fill="url(#goldGradient)" />
+                            
+                            <!-- Faisaliah Tower -->
+                            <rect x="200" y="100" width="30" height="200" fill="url(#buildingGradient)" />
+                            <polygon points="215,70 230,100 200,100" fill="url(#goldGradient)" />
+                            
+                            <!-- KAFD -->
+                            <rect x="300" y="120" width="20" height="180" fill="url(#buildingGradient)" />
+                            <rect x="330" y="150" width="20" height="150" fill="url(#buildingGradient)" />
+                            <rect x="360" y="100" width="20" height="200" fill="url(#buildingGradient)" />
+                            <rect x="390" y="130" width="20" height="170" fill="url(#buildingGradient)" />
+                            <rect x="420" y="80" width="20" height="220" fill="url(#buildingGradient)" />
+                            
+                            <!-- Connecting Lines -->
+                            <line x1="120" y1="150" x2="215" y2="150" stroke="#C09F42" stroke-width="3" stroke-dasharray="5,5" />
+                            <line x1="215" y1="150" x2="310" y2="150" stroke="#C09F42" stroke-width="3" stroke-dasharray="5,5" />
+                            <line x1="310" y1="150" x2="430" y2="150" stroke="#C09F42" stroke-width="3" stroke-dasharray="5,5" />
+                            
+                            <!-- Connection Nodes -->
+                            <circle cx="120" cy="150" r="8" fill="#C09F42" />
+                            <circle cx="215" cy="150" r="8" fill="#C09F42" />
+                            <circle cx="310" cy="150" r="8" fill="#C09F42" />
+                            <circle cx="430" cy="150" r="8" fill="#C09F42" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="slide-counter">2/7</div>
+        </section>
+        
+        <!-- Vision 2030 Sectors Slide -->
+        <section class="slide vision-slide" id="slide-3">
+            <div class="vision-content">
+                <div class="vision-header">
+                    <div class="badge"><i class="fas fa-eye"></i> رؤية 2030</div>
+                    <h2 class="vision-title">القطاعات ذات الأولوية ضمن مستهدفات رؤية 2030</h2>
+                    <p class="vision-subtitle">نركز جهودنا على القطاعات الاستراتيجية التي تدعم تحقيق مستهدفات رؤية المملكة 2030</p>
+                </div>
+                
+                <div class="sectors-grid">
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="sector-title">النقل البري والبحري</h3>
+                        <p class="sector-description">تطوير منظومة النقل المتكاملة وتعزيز الربط اللوجستي بين مناطق المملكة وموانئها.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="sector-title">الإعاشة والتشغيل</h3>
+                        <p class="sector-description">توفير خدمات الإعاشة والتشغيل للمشاريع الكبرى والمواسم مثل الحج والعمرة والفعاليات الوطنية.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="sector-title">الأمن السيبراني وإدارة الحشود</h3>
+                        <p class="sector-description">تعزيز الأمن السيبراني وتطوير حلول إدارة الحشود في المناسبات الكبرى والمواقع المقدسة.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3 class="sector-title">الخدمات اللوجستية</h3>
+                        <p class="sector-description">تطوير منظومة الخدمات اللوجستية المتكاملة لدعم التجارة والصناعة وتعزيز مكانة المملكة كمركز لوجستي عالمي.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="sector-title">التسويق والدعاية</h3>
+                        <p class="sector-description">تقديم خدمات تسويقية متكاملة للمشاريع الوطنية والترويج للفرص الاستثمارية في المملكة.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="sector-title">التشييد والبناء</h3>
+                        <p class="sector-description">المساهمة في تنفيذ مشاريع البنية التحتية والإسكان والمشاريع العملاقة ضمن رؤية 2030.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h3 class="sector-title">إدارة الأصول</h3>
+                        <p class="sector-description">تقديم خدمات إدارة الأصول والاستثمارات بكفاءة عالية لتعظيم العوائد وتقليل المخاطر.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3 class="sector-title">الخدمات الإلكترونية</h3>
+                        <p class="sector-description">تطوير الخدمات الإلكترونية والحلول الرقمية لدعم التحول الرقمي في القطاعين العام والخاص.</p>
+                    </div>
+                    
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="sector-title">التحالفات والمناقصات الاستراتيجية</h3>
+                        <p class="sector-description">بناء تحالفات استراتيجية للمشاركة في المناقصات الكبرى والمشاريع الوطنية الضخمة.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-counter">3/7</div>
+        </section>
+        
+        <!-- Goals Slide -->
+        <section class="slide goals-slide" id="slide-4">
+            <div class="slide-header">
+                <div class="badge"><i class="fas fa-bullseye"></i> أهدافنا</div>
+                <h2 class="slide-title">أهداف الشريك السعودي للاستثمار</h2>
+                <p class="slide-subtitle">نسعى لتحقيق مجموعة من الأهداف الاستراتيجية التي تدعم نمو المؤسسات وتعزز فرص نجاحها</p>
+            </div>
+            
+            <div class="goals-container">
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="goal-title">بناء تحالفات استراتيجية</h3>
+                    <p class="goal-description">بناء تحالفات استراتيجية بين أعضاء المجموعة، مما يتيح تبادل الخبرات والموارد وتحقيق أهداف مشتركة.</p>
+                    <ul class="goal-list">
+                        <li>تكوين شراكات طويلة المدى</li>
+                        <li>تبادل الخبرات والمعرفة</li>
+                        <li>تحقيق التكامل بين المؤسسات</li>
+                    </ul>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-kaaba"></i>
+                    </div>
+                    <h3 class="goal-title">فرص استثمار وتشغيل موسمية</h3>
+                    <p class="goal-description">خلق فرص استثمار وتشغيل موسمية في قطاع الحج والعمرة، من خلال تنسيق الجهود بين الأعضاء.</p>
+                    <ul class="goal-list">
+                        <li>استغلال المواسم الدينية</li>
+                        <li>تقديم خدمات متكاملة للحجاج والمعتمرين</li>
+                        <li>تحقيق عوائد استثمارية مجزية</li>
+                    </ul>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="goal-title">تمكين التوسع السريع</h3>
+                    <p class="goal-description">تمكين المؤسسات من التوسع السريع من خلال الشراكات الذكية، وتوفير فرص للدخول في أسواق جديدة.</p>
+                    <ul class="goal-list">
+                        <li>فتح أسواق جديدة</li>
+                        <li>تسريع النمو غير العضوي</li>
+                        <li>تقليل مخاطر التوسع</li>
+                    </ul>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="goal-title">المشاركة في المناقصات الكبرى</h3>
+                    <p class="goal-description">تمكين المؤسسات من المشاركة في المناقصات الكبرى من خلال تكوين تحالفات تنافسية قوية.</p>
+                    <ul class="goal-list">
+                        <li>تجميع القدرات والإمكانيات</li>
+                        <li>تقديم عروض تنافسية متكاملة</li>
+                        <li>الوصول إلى مشاريع أكبر حجماً</li>
+                    </ul>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="goal-title">تبادل الخبرات والاستشارات</h3>
+                    <p class="goal-description">تسهيل تبادل الخبرات والاستشارات بين أعضاء المجموعة، مما يساهم في تطوير الأعمال وتحسين الأداء.</p>
+                    <ul class="goal-list">
+                        <li>جلسات استشارية دورية</li>
+                        <li>مشاركة قصص النجاح والتحديات</li>
+                        <li>تطوير استراتيجيات مشتركة</li>
+                    </ul>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 class="goal-title">المساهمة في تحقيق رؤية 2030</h3>
+                    <p class="goal-description">المساهمة الفعالة في تحقيق مستهدفات رؤية المملكة 2030 من خلال المشاريع والمبادرات المشتركة.</p>
+                    <ul class="goal-list">
+                        <li>دعم برامج التحول الوطني</li>
+                        <li>تعزيز المحتوى المحلي</li>
+                        <li>المساهمة في التنمية المستدامة</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide-counter">4/7</div>
+        </section>
+        
+        <!-- Services Slide -->
+        <section class="slide" id="slide-5">
+            <div class="slide-header">
+                <div class="badge"><i class="fas fa-cogs"></i> خدماتنا</div>
+                <h2 class="slide-title">خدمات الشريك السعودي للمؤسسات</h2>
+                <p class="slide-subtitle">نقدم مجموعة متنوعة من الخدمات المصممة خصيصاً لتلبية احتياجات المؤسسات الطموحة</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>خدمة "المسار السريع للفرص"</h3>
+                            <span>ربط مباشر وفعال</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <p>ربط مباشر بين المؤسسة وشركات أخرى مستعدة للشراكة/الاستثمار/الاستفادة. مثال: مؤسسة تقنية ترغب بالدخول في قطاع الحج → الشريك السعودي يوفر طرف لوجستي جاهز للتشغيل المشترك.</p>
+                    </div>
+                    <div class="service-footer">
+                        <span class="service-benefit">الفائدة: تسريع النمو</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>خدمة "تمثيل الفرص"</h3>
+                            <span>حضور نيابة عنك</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <p>حضور نيابة عن المؤسسة في اجتماعات أو تفاهمات أولية مع شركات أخرى. تفتح أبواب التعاون دون أن تهدر المؤسسة وقتها وجهدها في تصفية العروض.</p>
+                    </div>
+                    <div class="service-footer">
+                        <span class="service-benefit">الفائدة: توفير الوقت والجهد</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>خدمة "شبكة الإعلان المشتركة"</h3>
+                            <span>ترويج غير مباشر</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <p>نشر عن خدمات المؤسسة ضمن شبكة أعضاء الشريك، بطريقة ترويج غير مباشرة (محتوى + توصيات). بأسلوب "مَن جرّب يرشح"، وليس إعلانات مدفوعة مباشرة.</p>
+                    </div>
+                    <div class="service-footer">
+                        <span class="service-benefit">الفائدة: زيادة المصداقية والوصول</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>خدمة "المستشار الظل"</h3>
+                            <span>دعم استراتيجي</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <p>تتيح للمؤسسة عضوًا في الشريك السعودي كمستشار استراتيجي غير رسمي (مدفوع أو مجاني ضمن اشتراك). خصوصًا في مراحل القرارات الصعبة (شريك؟ توسع؟ سوق جديد؟).</p>
+                    </div>
+                    <div class="service-footer">
+                        <span class="service-benefit">الفائدة: قرارات أكثر حكمة</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>خدمة "إدارة تحالفات قصيرة الأجل"</h3>
+                            <span>تنسيق مشاريع مشتركة</span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <p>الشريك ينظم تحالفًا مؤق```
