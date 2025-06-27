@@ -1,0 +1,958 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشريك السعودي SPG - المنصة الاستثمارية الرائدة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+        
+        * {
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e5631 0%, #0d8a45 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .section-divider {
+            height: 5px;
+            background: linear-gradient(90deg, #1e5631, #0d8a45, #1e5631);
+        }
+        
+        .sustainability-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .sustainability-card:hover .sustainability-icon {
+            transform: scale(1.2);
+        }
+        
+        .tab-active {
+            background-color: #1e5631;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="text-3xl font-bold">
+                        <span class="border-b-4 border-white pb-1">الشريك السعودي</span>
+                        <span class="text-xl font-light ms-2">SPG</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-1 space-x-reverse">
+                    <a href="#main" class="px-4 py-2 rounded-lg hover:bg-white hover:text-green-800 transition">الرئيسية</a>
+                    <a href="#about" class="px-4 py-2 rounded-lg hover:bg-white hover:text-green-800 transition">من نحن</a>
+                    <a href="#goals" class="px-4 py-2 rounded-lg hover:bg-white hover:text-green-800 transition">أهدافنا</a>
+                    <a href="#services" class="px-4 py-2 rounded-lg hover:bg-white hover:text-green-800 transition">خدماتنا</a>
+                    <a href="#sustainability" class="px-4 py-2 rounded-lg hover:bg-white hover:text-green-800 transition">الاستدامة</a>
+                    <a href="#contact" class="px-4 py-2 rounded-lg hover:bg-white hover:text-green-800 transition">تواصل معنا</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 bg-white rounded-lg shadow-lg text-green-800">
+                <div class="flex flex-col p-4">
+                    <a href="#main" class="px-4 py-2 hover:bg-green-100 rounded-lg transition">الرئيسية</a>
+                    <a href="#about" class="px-4 py-2 hover:bg-green-100 rounded-lg transition">من نحن</a>
+                    <a href="#goals" class="px-4 py-2 hover:bg-green-100 rounded-lg transition">أهدافنا</a>
+                    <a href="#services" class="px-4 py-2 hover:bg-green-100 rounded-lg transition">خدماتنا</a>
+                    <a href="#sustainability" class="px-4 py-2 hover:bg-green-100 rounded-lg transition">الاستدامة</a>
+                    <a href="#contact" class="px-4 py-2 hover:bg-green-100 rounded-lg transition">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="main" class="relative bg-cover bg-center py-24" style="background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%221200%22 height=%22600%22 viewBox=%220 0 1200 600%22><rect fill=%22%231e5631%22 width=%221200%22 height=%22600%22/><path fill=%22%230d8a45%22 fill-opacity=%220.4%22 d=%22M0,600 C600,450 800,150 1200,600 V0 H0 Z%22/><path fill=%22%23ffffff%22 fill-opacity=%220.05%22 d=%22M0,600 C400,300 800,450 1200,300 V0 H0 Z%22/></svg>')">
+        <div class="container mx-auto px-4">
+            <div class="bg-white bg-opacity-90 rounded-xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-6">
+                    <span class="border-b-4 border-green-600 pb-2">الشريك السعودي للاستثمار</span>
+                    <span class="text-green-600 block mt-3">حيث تتحوّل العلاقات إلى فرص، والشراكات إلى إنجازات</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8">
+                    مرحبًا بك في "الشريك السعودي"، المنصة النخبوية التي تجمع أصحاب المناصب ورواد الأعمال في المملكة، لنبني سويًا تحالفات استراتيجية تشارك في رسم مستقبل الاقتصاد السعودي، خصوصًا في القطاعات ذات الأولوية ضمن مستهدفات رؤية 2030.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center mb-8">
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">🚛</div>
+                        <span>النقل البري والبحري</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">🍽️</div>
+                        <span>الإعاشة والتشغيل</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">🛡️</div>
+                        <span>الأمن السيبراني وإدارة الحشود</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">📦</div>
+                        <span>الخدمات اللوجستية</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">📣</div>
+                        <span>التسويق والدعاية</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">🏗️</div>
+                        <span>التشييد والبناء</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">🧾</div>
+                        <span>إدارة الأصول</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 flex items-center shadow-md">
+                        <div class="text-3xl text-green-600 ml-3">📡</div>
+                        <span>الخدمات الإلكترونية</span>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-lg text-center transition shadow-lg">
+                        انضم إلينا الآن
+                    </a>
+                    <a href="#sustainability" class="bg-white border-2 border-green-700 hover:bg-green-50 text-green-700 font-bold py-3 px-8 rounded-lg text-center transition shadow-md">
+                        اكتشف فوائد الاستدامة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">من نحن</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="bg-green-50 rounded-xl p-8 shadow-lg max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/3">
+                        <div class="rounded-full bg-green-700 p-8 inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold text-green-800 mb-4">تجمّع نخبوي</h3>
+                        <p class="text-gray-700 text-lg">
+                            الشريك السعودي هو تجمّع نخبوي يضم أصحاب مناصب تنفيذية ورواد أعمال في شركات ومؤسسات سعودية ناشئة أو قائمة. نعمل على خلق فرص تشاركية مباشرة بين المؤسسات الأعضاء، مما يتيح استغلال الموارد المشتركة وتحقيق أهداف النمو بكفاءة أعلى وتكلفة أقل.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">بناء فرص تشاركية مباشرة</h3>
+                    <p class="text-gray-600">
+                        نعمل على خلق فرص تشاركية مباشرة بين المؤسسات الأعضاء، مما يتيح استغلال الموارد المشتركة وتحقيق أهداف النمو بكفاءة أعلى وتكلفة أقل.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">دعم أهداف النمو عبر شبكة علاقات استراتيجية</h3>
+                    <p class="text-gray-600">
+                        نوفر شبكة علاقات استراتيجية تساعد المؤسسات على تحقيق أهدافها في النمو والتوسع من خلال الوصول المباشر إلى صناع القرار وأصحاب الخبرة.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">تسهيل التعاون، التشبيك، والتسويق التكاملي</h3>
+                    <p class="text-gray-600">
+                        نسهل عمليات التعاون والتشبيك بين الأعضاء، ونقدم فرصاً للتسويق التكاملي الذي يعزز الوصول إلى شرائح جديدة من العملاء بتكلفة أقل.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+
+    <!-- Goals Section -->
+    <section id="goals" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">أهدافنا</h2>
+                <p class="text-xl text-gray-600">نسعى لتحقيق مجموعة من الأهداف الاستراتيجية التي تدعم نمو المؤسسات وتعزز فرص نجاحها</p>
+                <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300 border-t-4 border-green-600">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2 text-center">فرص استثمار وتشغيل موسمية</h3>
+                    <div class="text-center mb-4">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">هدف رئيسي</span>
+                    </div>
+                    <p class="text-gray-600 text-center">
+                        خلق فرص استثمار وتشغيل موسمية في قطاع الحج والعمرة، من خلال تنسيق الجهود بين الأعضاء وتوفير حلول متكاملة تلبي احتياجات هذا القطاع الواعد.
+                    </p>
+                    <div class="flex justify-center mt-4 gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">استثمار</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">تشغيل</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300 border-t-4 border-green-600">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hands-helping text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2 text-center">بناء تحالفات استراتيجية</h3>
+                    <div class="text-center mb-4">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">هدف رئيسي</span>
+                    </div>
+                    <p class="text-gray-600 text-center">
+                        بناء تحالفات استراتيجية بين أعضاء المجموعة، مما يتيح تبادل الخبرات والموارد وتحقيق أهداف مشتركة تعود بالنفع على جميع الأطراف.
+                    </p>
+                    <div class="flex justify-center mt-4 gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">تحالفات</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">شراكات</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300 border-t-4 border-green-600">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-expand-arrows-alt text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2 text-center">تمكين التوسع السريع</h3>
+                    <div class="text-center mb-4">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">هدف رئيسي</span>
+                    </div>
+                    <p class="text-gray-600 text-center">
+                        تمكين المؤسسات من التوسع السريع من خلال الشراكات الذكية، وتوفير فرص للدخول في أسواق جديدة بدعم من شبكة علاقات موثوقة ومتخصصة.
+                    </p>
+                    <div class="flex justify-center mt-4 gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">توسع</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">نمو</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300 border-t-4 border-green-600">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2 text-center">تبادل الخبرات والاستشارات</h3>
+                    <div class="text-center mb-4">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">هدف ثانوي</span>
+                    </div>
+                    <p class="text-gray-600 text-center">
+                        تسهيل تبادل الخبرات والاستشارات بين أعضاء المجموعة، مما يساهم في تطوير الأعمال وتحسين الأداء وتجنب الأخطاء الشائعة في مجال الأعمال.
+                    </p>
+                    <div class="flex justify-center mt-4 gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">خبرات</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">استشارات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">خدماتنا</h2>
+                <p class="text-xl text-gray-600">نقدم مجموعة متنوعة من الخدمات المصممة خصيصاً لتلبية احتياجات المؤسسات الطموحة</p>
+                <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-300 border border-gray-200">
+                    <div class="bg-green-700 text-white p-4">
+                        <h3 class="text-xl font-bold">خدمة "المسار السريع للفرص"</h3>
+                        <p class="text-sm opacity-80">ربط مباشر وفعال</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            ربط مباشر بين المؤسسة وشركات أخرى مستعدة للشراكة/الاستثمار/الاستفادة. مثال: مؤسسة تقنية ترغب بالدخول في قطاع الحج → الشريك السعودي يوفر طرف لوجستي جاهز للتشغيل المشترك.
+                        </p>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="font-bold text-green-800">الفائدة: تسريع النمو</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-300 border border-gray-200">
+                    <div class="bg-green-700 text-white p-4">
+                        <h3 class="text-xl font-bold">خدمة "تمثيل الفرص"</h3>
+                        <p class="text-sm opacity-80">حضور نيابة عنك</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            حضور نيابة عن المؤسسة في اجتماعات أو تفاهمات أولية مع شركات أخرى. تفتح أبواب التعاون دون أن تهدر المؤسسة وقتها وجهدها في تصفية العروض.
+                        </p>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="font-bold text-green-800">الفائدة: توفير الوقت والجهد</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-300 border border-gray-200">
+                    <div class="bg-green-700 text-white p-4">
+                        <h3 class="text-xl font-bold">خدمة "شبكة الإعلان المشتركة"</h3>
+                        <p class="text-sm opacity-80">ترويج غير مباشر</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            نشر عن خدمات المؤسسة ضمن شبكة أعضاء الشريك، بطريقة ترويج غير مباشرة (محتوى + توصيات). بأسلوب "مَن جرّب يرشح"، وليس إعلانات مدفوعة مباشرة.
+                        </p>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="font-bold text-green-800">الفائدة: زيادة المصداقية والوصول</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-300 border border-gray-200">
+                    <div class="bg-green-700 text-white p-4">
+                        <h3 class="text-xl font-bold">خدمة "المستشار الظل"</h3>
+                        <p class="text-sm opacity-80">دعم استراتيجي</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            تتيح للمؤسسة عضوًا في الشريك السعودي كمستشار استراتيجي غير رسمي (مدفوع أو مجاني ضمن اشتراك). خصوصًا في مراحل القرارات الصعبة (شريك؟ توسع؟ سوق جديد؟).
+                        </p>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="font-bold text-green-800">الفائدة: قرارات أكثر حكمة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-300 border border-gray-200">
+                    <div class="bg-green-700 text-white p-4">
+                        <h3 class="text-xl font-bold">خدمة "إدارة تحالفات قصيرة الأجل"</h3>
+                        <p class="text-sm opacity-80">تنسيق مشاريع مشتركة</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            الشريك ينظم تحالفًا مؤقتًا بين المؤسسة وأعضاء آخرين لتحقيق هدف قصير (مشروع حج، تطبيق، مناقصة). أنت كمشغل رئيسي، والبقية كمنفذين.
+                        </p>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="font-bold text-green-800">الفائدة: تنفيذ مشاريع أكبر</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-300 border border-gray-200">
+                    <div class="bg-green-700 text-white p-4">
+                        <h3 class="text-xl font-bold">خدمة "التخطيط المستدام"</h3>
+                        <p class="text-sm opacity-80">استراتيجيات مستدامة</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            تقديم استشارات متخصصة في مجال الاستدامة وكيفية دمجها في استراتيجيات الأعمال، مما يساعد المؤسسات على تحقيق النمو المستدام وتعزيز سمعتها في السوق.
+                        </p>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="font-bold text-green-800">الفائدة: تعزيز القيمة طويلة الأمد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Sustainability Benefits Section -->
+    <section id="sustainability" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">فوائد الاستدامة والتعاون معنا</h2>
+                <p class="text-xl text-gray-600">نلتزم بتقديم حلول مستدامة تعزز النمو المسؤول وتحقق فوائد طويلة الأمد لشركائنا</p>
+                <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+            </div>
+            
+            <!-- Sustainability Tabs -->
+            <div class="max-w-5xl mx-auto mb-12">
+                <div class="flex flex-wrap justify-center gap-2 mb-6">
+                    <button class="tab-button tab-active px-6 py-3 rounded-lg font-bold transition" data-tab="environmental">
+                        <i class="fas fa-leaf ml-2"></i>الاستدامة البيئية
+                    </button>
+                    <button class="tab-button px-6 py-3 rounded-lg font-bold bg-green-100 text-green-800 hover:bg-green-200 transition" data-tab="economic">
+                        <i class="fas fa-chart-line ml-2"></i>الاستدامة الاقتصادية
+                    </button>
+                    <button class="tab-button px-6 py-3 rounded-lg font-bold bg-green-100 text-green-800 hover:bg-green-200 transition" data-tab="social">
+                        <i class="fas fa-users ml-2"></i>الاستدامة الاجتماعية
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <!-- Environmental Tab -->
+                    <div class="tab-content active" id="environmental-tab">
+                        <h3 class="text-2xl font-bold text-green-800 mb-6 flex items-center">
+                            <i class="fas fa-leaf text-green-600 ml-3 text-3xl"></i>
+                            فوائد الاستدامة البيئية
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-recycle text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">تقليل البصمة الكربونية</h4>
+                                    <p class="text-gray-700">
+                                        من خلال التعاون المشترك، نساعد الشركات على تقليل انبعاثات الكربون عبر مشاركة الموارد وتحسين كفاءة العمليات.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-solar-panel text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">دعم مشاريع الطاقة المتجددة</h4>
+                                    <p class="text-gray-700">
+                                        نوفر فرص استثمارية في مشاريع الطاقة المتجددة، مما يساهم في تحقيق أهداف رؤية 2030 للتحول نحو مصادر طاقة نظيفة.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-water text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">ترشيد استهلاك الموارد</h4>
+                                    <p class="text-gray-700">
+                                        نقدم استشارات متخصصة في ترشيد استهلاك المياه والطاقة، مما يقلل التكاليف التشغيلية ويحافظ على الموارد الطبيعية.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-building text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">تطوير مباني خضراء</h4>
+                                    <p class="text-gray-700">
+                                        نربط المستثمرين بفرص تطوير المباني الخضراء والمستدامة، مما يعزز كفاءة استخدام الطاقة ويحسن جودة البيئة الداخلية.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Economic Tab -->
+                    <div class="tab-content hidden" id="economic-tab">
+                        <h3 class="text-2xl font-bold text-green-800 mb-6 flex items-center">
+                            <i class="fas fa-chart-line text-green-600 ml-3 text-3xl"></i>
+                            فوائد الاستدامة الاقتصادية
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-coins text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">خفض التكاليف التشغيلية</h4>
+                                    <p class="text-gray-700">
+                                        من خلال الشراكات الاستراتيجية، نساعد المؤسسات على خفض تكاليفها التشغيلية بنسبة تصل إلى 30% عبر مشاركة الموارد والخدمات.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-shield-alt text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">تقليل المخاطر الاستثمارية</h4>
+                                    <p class="text-gray-700">
+                                        نوفر دراسات جدوى متكاملة وشبكة من الخبراء لتقييم الفرص الاستثمارية، مما يقلل من المخاطر ويزيد من فرص النجاح.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-sync-alt text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">تنويع مصادر الدخل</h4>
+                                    <p class="text-gray-700">
+                                        نساعد المؤسسات على تنويع مصادر دخلها من خلال الدخول في أسواق جديدة وتطوير منتجات وخدمات مبتكرة تلبي احتياجات السوق.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-hand-holding-usd text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">الوصول إلى مصادر تمويل مستدامة</h4>
+                                    <p class="text-gray-700">
+                                        نربط المؤسسات بمصادر التمويل المستدام والصناديق الاستثمارية التي تدعم المشاريع ذات الأثر الإيجابي على البيئة والمجتمع.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Tab -->
+                    <div class="tab-content hidden" id="social-tab">
+                        <h3 class="text-2xl font-bold text-green-800 mb-6 flex items-center">
+                            <i class="fas fa-users text-green-600 ml-3 text-3xl"></i>
+                            فوائد الاستدامة الاجتماعية
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-graduation-cap text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">تطوير الكفاءات الوطنية</h4>
+                                    <p class="text-gray-700">
+                                        نوفر برامج تدريبية متخصصة لتطوير مهارات الكوادر الوطنية، مما يساهم في تحقيق أهداف التوطين وزيادة نسبة مشاركة السعوديين في سوق العمل.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-hands-helping text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">دعم المسؤولية المجتمعية</h4>
+                                    <p class="text-gray-700">
+                                        نساعد المؤسسات على تطوير برامج المسؤولية المجتمعية التي تعزز سمعتها وتحقق أثراً إيجابياً في المجتمع المحلي.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-venus-mars text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">تعزيز التنوع والشمول</h4>
+                                    <p class="text-gray-700">
+                                        نقدم استشارات متخصصة في تعزيز التنوع والشمول في بيئة العمل، مما يزيد من الإبداع والابتكار ويحسن بيئة العمل.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="sustainability-card bg-green-50 p-5 rounded-lg flex items-start">
+                                <div class="sustainability-icon bg-green-200 p-3 rounded-full ml-4">
+                                    <i class="fas fa-heartbeat text-green-700 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-green-800 mb-2">تحسين جودة الحياة</h4>
+                                    <p class="text-gray-700">
+                                        نساهم في تطوير مشاريع تحسن جودة الحياة في المدن السعودية، مما يتماشى مع مستهدفات رؤية 2030 لجعل المدن السعودية أكثر استدامة وجاذبية للعيش.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sustainability Stats -->
+            <div class="bg-white rounded-xl shadow-lg p-8 max-w-5xl mx-auto">
+                <h3 class="text-2xl font-bold text-green-800 mb-6 text-center">أرقام تعكس التزامنا بالاستدامة</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-green-600 text-4xl font-bold mb-2">+30%</div>
+                        <div class="bg-green-100 h-2 w-3/4 mx-auto rounded-full mb-3">
+                            <div class="bg-green-600 h-2 w-3/4 rounded-full"></div>
+                        </div>
+                        <p class="text-gray-700">زيادة في كفاءة استخدام الموارد</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-green-600 text-4xl font-bold mb-2">-25%</div>
+                        <div class="bg-green-100 h-2 w-3/4 mx-auto rounded-full mb-3">
+                            <div class="bg-green-600 h-2 w-1/2 rounded-full"></div>
+                        </div>
+                        <p class="text-gray-700">تقليل في البصمة الكربونية</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-green-600 text-4xl font-bold mb-2">+40%</div>
+                        <div class="bg-green-100 h-2 w-3/4 mx-auto rounded-full mb-3">
+                            <div class="bg-green-600 h-2 w-4/5 rounded-full"></div>
+                        </div>
+                        <p class="text-gray-700">زيادة في فرص العمل المستدامة</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-green-600 text-4xl font-bold mb-2">+65%</div>
+                        <div class="bg-green-100 h-2 w-3/4 mx-auto rounded-full mb-3">
+                            <div class="bg-green-600 h-2 rounded-full"></div>
+                        </div>
+                        <p class="text-gray-700">تحسين في رضا العملاء والشركاء</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Sustainability Benefits -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">الامتثال للمعايير العالمية</h3>
+                    <p class="text-gray-600">
+                        نساعد المؤسسات على الامتثال للمعايير العالمية للاستدامة مثل ISO 14001 وESG، مما يعزز سمعتها ويفتح أبواب التعاون الدولي.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">تعزيز السمعة المؤسسية</h3>
+                    <p class="text-gray-600">
+                        تبني ممارسات الاستدامة يعزز سمعة المؤسسة لدى العملاء والمستثمرين، مما يزيد من قيمتها السوقية ويحسن صورتها الذهنية.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">تحفيز الابتكار المستدام</h3>
+                    <p class="text-gray-600">
+                        نوفر منصة لتبادل الأفكار والخبرات في مجال الابتكار المستدام، مما يساعد المؤسسات على تطوير منتجات وخدمات صديقة للبيئة تلبي احتياجات السوق.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Target Achievements Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">كيف نراعي مستهدفات المؤسسات؟</h2>
+                <p class="text-xl text-gray-600">نفهم احتياجات المؤسسات التي ترغب بالنمو ونقدم حلولاً تساعدها على تحقيق أهدافها</p>
+                <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden max-w-4xl mx-auto">
+                <table class="w-full">
+                    <thead class="bg-green-700 text-white">
+                        <tr>
+                            <th class="py-4 px-6 text-right">مستهدف المؤسسة</th>
+                            <th class="py-4 px-6 text-right">كيف يساعد الشريك السعودي؟</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6 font-bold text-green-800">التوسع في أسواق جديدة</td>
+                            <td class="py-4 px-6 text-gray-700">يوفر شبكة علاقات جاهزة للدخول الجماعي أو الاستفادة من خبرات السوق المستهدف.</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-green-50">
+                            <td class="py-4 px-6 font-bold text-green-800">بناء سمعة مهنية</td>
+                            <td class="py-4 px-6 text-gray-700">من خلال التواجد مع قادة آخرين، يظهر أنك "في الدائرة"، ويُروج عنك كمؤسسة موثوقة.</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6 font-bold text-green-800">تقليل التكاليف</td>
+                            <td class="py-4 px-6 text-gray-700">التعاون المشترك (co-marketing، co-development، خدمات متبادلة) يقلل من التكاليف.</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-green-50">
+                            <td class="py-4 px-6 font-bold text-green-800">اختبار أفكار جديدة</td>
+                            <td class="py-4 px-6 text-gray-700">نقاشات المجموعة وجلسات الطاولة تعطي تغذية راجعة حقيقية من قادة تجارب.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-bold text-green-800">جذب مستثمرين</td>
+                            <td class="py-4 px-6 text-gray-700">ممكن ترتيب عروض مخصصة للمستثمرين أو إدخالهم كمستشارين ضمن المجموعة.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">تواصل معنا</h2>
+                <p class="text-xl opacity-90">نحن هنا للإجابة على استفساراتك ومساعدتك في الانضمام إلى شبكة الشريك السعودي</p>
+                <div class="w-24 h-1 bg-white mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-green-800 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">معلومات الاتصال</h3>
+                        
+                        <div class="mb-6 flex items-start">
+                            <div class="ml-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">العنوان</p>
+                                <p class="opacity-90">الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6 flex items-start">
+                            <div class="ml-4 mt-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">البريد الإلكتروني</p>
+                                <p class="opacity-90">info@saudipartner.sa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6 flex items-start">
+                            <div class="ml-4 mt-1">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-1">الهاتف</p>
+                                <p class="opacity-90">+966 55 000 0000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="font-bold mb-4">تابعنا على</h4>
+                            <div class="flex space-x-4 space-x-reverse">
+                                <a href="#" class="bg-white text-green-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-100 transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-white text-green-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-100 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-white text-green-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-100 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold text-green-800 mb-6">أرسل لنا رسالة</h3>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="name">الاسم</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500" placeholder="أدخل اسمك">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="company">اسم الشركة</label>
+                                    <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500" placeholder="أدخل اسم الشركة">
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="email">البريد الإلكتروني</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500" placeholder="أدخل بريدك الإلكتروني">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="phone">رقم الهاتف</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500" placeholder="أدخل رقم هاتفك">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="message">الرسالة</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500" placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg w-full md:w-auto">
+                                    إرسال الرسالة
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">الشريك السعودي</h3>
+                    <p class="opacity-80 mb-6">
+                        منصة نخبوية تجمع أصحاب المناصب ورواد الأعمال في المملكة، لبناء تحالفات استراتيجية تشارك في رسم مستقبل الاقتصاد السعودي.
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="bg-green-800 hover:bg-green-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-green-800 hover:bg-green-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-green-800 hover:bg-green-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#main" class="opacity-80 hover:opacity-100 transition">الرئيسية</a></li>
+                        <li><a href="#about" class="opacity-80 hover:opacity-100 transition">من نحن</a></li>
+                        <li><a href="#goals" class="opacity-80 hover:opacity-100 transition">أهدافنا</a></li>
+                        <li><a href="#services" class="opacity-80 hover:opacity-100 transition">خدماتنا</a></li>
+                        <li><a href="#sustainability" class="opacity-80 hover:opacity-100 transition">الاستدامة</a></li>
+                        <li><a href="#contact" class="opacity-80 hover:opacity-100 transition">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">القطاعات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">النقل البري والبحري</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">الإعاشة والتشغيل</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">الأمن السيبراني</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">الخدمات اللوجستية</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">التسويق والدعاية</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">التشييد والبناء</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">النشرة الإخبارية</h3>
+                    <p class="opacity-80 mb-4">
+                        اشترك في نشرتنا الإخبارية للحصول على آخر الأخبار والفرص الاستثمارية.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 rounded-r-lg w-full focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-l-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-800 mt-8 pt-8 text-center opacity-80">
+                <p>© 2023 الشريك السعودي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+        
+        // Tab Functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab-button').forEach(btn => {
+                    btn.classList.remove('tab-active');
+                    btn.classList.add('bg-green-100', 'text-green-800', 'hover:bg-green-200');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('tab-active');
+                this.classList.remove('bg-green-100', 'text-green-800', 'hover:bg-green-200');
+                
+                // Hide all tab content
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.add('hidden');
+                    content.classList.remove('active');
+                });
+                
+                // Show selected tab content
+                const tabId = this.getAttribute('data-tab');
+                const tabContent = document.getElementById(tabId + '-tab');
+                tabContent.classList.remove('hidden');
+                tabContent.classList.add('active');
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Validate form
+            if (!name || !email || !message) {
+                alert('الرجاء ملء جميع الحقول المطلوبة');
+                return;
+            }
+            
+            // Show success message (in a real application, you would send this data to a server)
+            alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'951508f404561f9c',t:'MTc1MDE4OTM5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
